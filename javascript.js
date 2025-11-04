@@ -12,3 +12,9 @@ for (i = 0; i < 16; i++) {
     }
     gridContainer.appendChild(row);
 }
+
+gridContainer.addEventListener('mouseover', (event) => {
+    if (event.target != gridContainer) {
+        event.target.style.backgroundColor = "red";
+    }
+});
